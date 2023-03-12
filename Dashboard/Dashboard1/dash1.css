@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* CSS for header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+.header .logo {
+    font-size: 25px;
+    font-family: "Sriracha", cursive;
+    color: #000;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+
+
+/* CSS for main element */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 520px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("./votingimage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.intro h1 {
+    font-family: sans-serif;
+    font-size:20px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.intro p {
+    font-size: 20px;
+    color: #d1d1d1;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.intro button {
+    margin: 1em;
+    font-family: "Sigmar One", cursive;
+    letter-spacing: 1px;
+    height: 3em;
+    width: 11em;
+    background: lightblue;
+    color: rgb(255, 255, 255);
+    font-size: 3.05em;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+    border-radius: 90px;
+}
+
+.btn-1 {
+   
+    transition: all 0.3s ease-out;
+}
+
+.btn-1:hover {
+    box-shadow: inset 12em 0 #3a0eff;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+.btn-1:hover:after {
+    width: 100%;
+}
+
+.btn-3 {
+    position: relative;
+    background: #3a0eff;
+    z-index: 1;
+    transition: all 0.3s ease-out;
+}
+
+.btn-3:hover {
+    color: black;
+    cursor: pointer;
+    
+}
+
+.btn-3::after {
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background: #3a0eff;
+    right: 0;
+    top: 0;
+    border-radius: 5px;
+    z-index: -1;
+    transition: all 0.3s ease-out;
+    border-radius: 90px;
+}
+
+.btn-3:hover:after {
+    width: 100%;
+}
